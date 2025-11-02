@@ -1,0 +1,19 @@
+# name of the pipeline
+name : github avdreo5 pipeline
+#trigger event 
+on: 
+    push:
+        brances:
+            - main
+jobs: 
+    demo-job:
+        runs-on:ubantu-latest
+
+        steps:
+                - name:checkout code
+                uses: actions/checkout@v2
+
+
+                 - name:print message
+                run: echo"welcone to gitub actions"
+
